@@ -18,7 +18,7 @@ if __name__ == '__main__':
         print('url:',rsq.geturl())
         print('info:',rsq.info())
         print('code:',rsq.getcode())    #状态码    200
-        print('rsq类型:',type(rsq))
+        print('rsq类型:',type(rzsq))
 
         r = rsq.read()
         print(type(r))
