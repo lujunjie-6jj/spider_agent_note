@@ -9,6 +9,10 @@ if __name__ == '__main__':
     fullurl=url+qs
     print(qs)
     print(fullurl)
+    ''''
+    r=request.Request(fullurl,data=date,headers=headers)  若构建Request实例，则可将所有请求信息封装在
+    Requeszh中,with request.urlopen(r) as rsq:
+    '''
     with request.urlopen(fullurl) as rsq:
 
         print('url:',rsq.geturl())
