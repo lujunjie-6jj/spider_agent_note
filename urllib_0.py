@@ -8,5 +8,4 @@ if __name__ == '__main__':
 
         html=r.decode()
         print(type(html))
-
         print(html)
