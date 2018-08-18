@@ -6,6 +6,7 @@ if __name__ == '__main__':
         r = rsq.read()
         print(type(r))
 
+
         html=r.decode()
         print(type(html))
         print(html)
