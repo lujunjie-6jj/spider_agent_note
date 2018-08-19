@@ -128,3 +128,12 @@ https请求验证ssl证书
 
   rsp = requests.get("https://www.baidu.com", verify=False)
   # 如果用verify=True访问12306，会报错，因为他证书有问题 
+  
+#正则常用方法：
+    match: 从开始位置开始查找，一次匹配
+    search：从任何位置查找，一次匹配， 案例v25
+    findall： 全部匹配，返回列表, 案例v26
+    finditer： 全部匹配，返回迭代器, 案例v26
+    split： 分割字符串，返回列表
+    sub：替换
+    中文unicode范围主要在[u4e00-u9fa5]
