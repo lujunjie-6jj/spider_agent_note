@@ -137,3 +137,17 @@ https请求验证ssl证书
     split： 分割字符串，返回列表
     sub：替换
     中文unicode范围主要在[u4e00-u9fa5]
+    
+    
+Selenium + PhantomJS
+Selenium: web自动化测试工具
+自动加载页面
+获取数据
+截屏
+安装： pip install selenium==2.48.0
+官网： http://selenium-python.readthedocs.io/index.html
+PhantomJS(幽灵)
+基于Webkit 的无界面的浏览器
+官网： http://phantomjs.org/download.html
+Selenium 库有有一个WebDriver的API
+WebDriver可以跟页面上的元素进行各种交互，用它可以来进行爬取
