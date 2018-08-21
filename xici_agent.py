@@ -14,11 +14,11 @@ import csv
 def get_agents(n):
     all_agents=[]
     driver = webdriver.Chrome()
-    url = 'http://www.xicidaili.com/nn/'
+    url = 'http://www.xicidaili.com/nn/301'
     driver.get(url)
     for i in range(1, n+1):
         try:
-            time.sleep(random.random() * 3)
+            time.sleep(random.random() * 5)
 
             print ('打开第%d页' % i)
 
@@ -41,7 +41,8 @@ def get_agents(n):
                     # dail['地址'] = ad
                     dail['存活时间'] = surv
                     all_agents.append(dail)
-            driver.find_element_by_link_text('/free/inha/'+str(i)+'/').click()
+            driver.find_element_by_class_name('next_page')
+            driver.find_element_by_class_name('next_page').click()
         except:
             print('第%d页打开失败！！！'%i)
             continue
@@ -50,7 +51,7 @@ def get_agents(n):
 
 #可用代理存入csv
 def save_to_csv(goods):
-    f = open('all_西刺代理_未验证.csv', 'w', newline='')
+    f = open('all_西刺代理_未验证.csv', 'a', newline='')
     headers = ['IP', '端口', '匿名度',  '存活时间']
     w = csv.DictWriter(f, fieldnames=headers)
     w.writeheader()
