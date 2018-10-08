@@ -35,7 +35,7 @@ def yanzheng_agents(agent,w):
         print('不可用')
 
 if __name__ == '__main__':
-    f = open('avai.csv', 'w', newline='')
+    f = open('keyong.csv', 'w', newline='')
     headers = ['IP', '端口', '匿名度',  '存活时间']
     w = csv.DictWriter(f, fieldnames=headers)
     w.writeheader()
